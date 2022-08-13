@@ -1,0 +1,341 @@
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;	
+	max-width:1600px;
+	list-style:none;
+	text-decoration:none;
+}
+
+html ,body{
+	font-family:verdana;
+	font-size:12px;
+	display:inline-block;
+	min-height:100vh;
+	width:100%;
+	margin:auto;	
+}
+
+body {
+
+}
+
+.container {
+	height:100%;
+	background:#FAFAFA;
+}
+
+.header {
+	width:100%;
+	height:80px;
+	background:yellow; 
+	color:rgb(21, 20, 20);
+	border:1px solid rgb(209, 205, 205);
+}
+.header_content {
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	background:red;
+}
+.header_left {
+	float:left;
+	height:100%;
+}
+.header_left h1 {
+	display:flex;
+	align-items:center;
+	height:100%;
+	color:#158;
+	font-weight:200;
+}
+.header_left h1 span {
+	font-weight:800;
+}
+.header_right {
+	height:100%;
+	display:flex;
+	align-items:center;
+	float:right;
+	font-size:20px;
+}
+.header_right  li {
+	display:inline-block;
+	padding:0px 20px;
+}
+.header_right  button{
+	padding: 5px 14px;
+	border-radius: 25px;
+	font-weight:light;
+	font-size: 16px;
+	border: 1px solid #444;
+	cursor: pointer;
+}
+.header_right button:hover {
+  background-color: #EEE;
+}
+.header_right img {
+	height: 30px;
+	width: 30px;
+	margin-right:10px;
+	vertical-align: middle;
+}
+
+
+
+
+/* User and reporting period (ts_head)------------------------------------------*/
+.ts_head {
+	display:flex;
+	margin:0px auto;
+	margin-top:20px;
+	height:120px;	
+	padding:20px 40px;
+	white-space: nowrap;
+	text-align:center;
+	font-size:20px;
+}
+.ts_head .ts_user {
+	padding-right:20px;
+}
+.ts_head .ts_user input {
+	width:350px;
+	height:30px;
+}
+.ts_head .ts_period {
+	padding-right:20px;
+}
+.ts_head .ts_period input {
+	width:150px;
+	height:30px;
+}
+.ts_head .ts_status {
+	padding-right:20px;
+}
+.ts_status_text {
+	width:120px;
+	height:30px;
+	margin:0px auto;
+	background:green;
+	color:white;
+	padding:5px 10px;
+	border-radius:2px;
+}
+.ts_head p {
+	margin:5px auto;
+	font-size:10px;
+}
+.ts_head input {
+	padding: 4px 0px;
+	text-align:center;
+	color: black;
+	font-size: 16px;
+	font-weight:lighter;
+	border:1px solid #555;
+	border-radius:2px;
+	vertical-align:middle;
+}
+.ts_head button {
+	padding: 5px 10px;
+	border-radius:5px;
+	background-color: #666;
+	color: white;
+	font-weight:bold;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  	vertical-align:middle;
+}
+.ts_head button:hover {
+  background-color: #444;
+}
+
+
+
+/* Form ------------------------------------------------------------------- */
+.ts_form {
+	display:flex;
+	margin:20px auto;
+	padding:0px 40px;
+	font-size:20px;
+	white-space: nowrap;
+	background:blue;
+}
+.ts_form_wrap {
+    box-sizing: border-box;
+
+}
+.ts_form .activssubactivs {
+	display:flex;
+    align-items: center;
+    justify-content: center;	
+}
+.ts_form p {
+	margin:0px 5px;
+	font-size:14px;
+}
+.ts_form .activssubactivs  select {
+	width:175px;
+	margin:0px 2px;
+	padding: 4px 0px;
+	background-color: #DDD;
+	text-align:center;
+	color: black;
+	font-size: 18px;
+	border:4px solid #555;
+	border-radius:5px;
+	vertical-align:middle;	
+}
+.ts_form .comments {
+	display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.ts_form .comments  input {
+	width:356px;
+	height:40px;
+	margin:0px 2px;
+	padding:5px;
+	background-color: #DDD;
+	text-align:left;
+	color: black;
+	font-size: 18px;
+	border:4px solid #555;
+	border-radius:5px;
+}
+.ts_form .week {
+	display:flex;
+	align-items: center;
+    justify-content: center;
+	margin-bottom:20px;
+}
+.ts_form .week  input {
+	width:47px;
+	margin:0px 2px;
+	padding: 4px 0px;
+	background-color: #DDD;
+	text-align:center;
+	color: black;
+	font-size: 18px;
+	border:4px solid #555;
+	border-radius:5px;
+}
+.ts_form .week input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.ts_form .week input[type=number] {
+  -moz-appearance: textfield;
+}
+.ts_form .week p {
+	text-align:center;
+	font-size:14px;
+}
+
+
+
+
+/* Arrows  --------------------------------------------------------------------------*/
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+  }
+  
+  .right {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+  }
+
+
+
+/* Add button ------------------------------------------------------------------------ */
+.ts_add {
+	display:flex;
+	align-items: center;
+    flex-direction: column;	
+	margin-top:34px;
+	margin-bottom:20px;
+}
+.ts_add button {
+	width:100px;
+	height:36px;
+	padding: 6px 10px;
+	border-radius:5px;
+	background-color: #666;
+	color: white;
+	font-weight:bold;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+}
+.ts_add button:hover {
+  background-color: #444;
+}
+
+
+
+
+
+
+/* Data --------------------------------------------------------------------- */
+.ts_form .activssubactivs  label {
+	width:200px;
+	margin:0px 2px;
+	padding: 5px 0px;
+	background-color: #DDD;
+	text-align:center;
+	color: black;
+	font-size: 20px;
+	font-weight:bold;
+	border:4px solid #555;
+	border-radius:5px;
+	vertical-align:middle;	
+}
+
+
+section {
+	height:500px;
+}
+
+
+/* Footer ------------------------------------------------------------------ */
+footer {
+	width:100%;
+	background:yellow;
+}
+
+iframe {
+	width:100%;
+}
+
+@media only screen and (max-width: 800px) {
+	body {
+		background:yellow;
+	}
+	.header_content {
+		padding:15px 20px;
+	}
+	.ts_head {
+		display:block;		
+		padding:20px;
+	}
+	.ts_form {
+		display:block;
+		padding:20px 20px;
+	}
+	.ts_form .comments {
+		margin-bottom:20px;
+	}
+	.ts_form .activssubactivs {
+		margin-bottom:20px;
+	}	
+	
+	
+	
+}
